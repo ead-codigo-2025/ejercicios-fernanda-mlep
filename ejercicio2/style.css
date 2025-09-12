@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 10;
+  padding: 10;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #E3D7FF; 
+}
+nav {
+  background-color: #ab23cd;
+  padding: 10px;
+}
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+main {
+  padding: 10px;
+}
