@@ -14,11 +14,14 @@
 
   <!-- Sidebar -->
   <div class="sidebar">
-    <img src="fotos/conejitoblanco.png" alt="conejito" class="sidebar-conejito">
+    <div class="volveraindex">
+    <a href="index.html">
+    <img src="fotos/conejitoblanco.png" alt="conejito" class="sidebar-conejito"></a>
+    </div>
   
     <h2>2023</h2>
     <ul>
-      <li><a href="Taller de Observación Fundamento y Forma.html">Taller de Observación Fundamento y Forma</a></li>
+      <li><a href="TOFF.html">Taller de Observación Fundamento y Forma</a></li>
       <li><a href="Taller de Creación Impresa.html">Taller de Creación Impresa</a></li>
     </ul>
 
@@ -51,12 +54,36 @@
        estudiante de tercer año en la carrera de Diseño en la Pontificia Universidad 
        Católica de Valparaíso. 
         A continuación puedes revisar mis tareas y proyectos relacionadas al mundo del
-         diseño gráfico y editorial ! </p>
+         diseño gráfico y editorial  ! </p>
+
+
+
+     <p class="textoinfo">Correo institucional: fernanda.moya.l@mail.pucv.cl</p>
+     <p class="textoinfo">Correo personal: fernanditamoya84@gmail.com</p>
+     <p class="textoinfo">Correo DOG: edicionesdog@gmail.com</p>
+     <p class="textoinfo">Instagram DOG: <a href="https://www.instagram.com/edicionesdog" target="_blank">@edicionesdog</a></p>
+
+      <img src="fotos/gatopiano.gif" alt="yop">
 
   
   </div>
 
   <!-- Vinculación del JS -->
   <script src="script.js"></script>
+
+  <script>
+  // Obtiene todos los enlaces del sidebar
+  const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+  // Itera sobre ellos y compara su href con la URL actual
+  sidebarLinks.forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add('activo');  // Agrega la clase activo al enlace correspondiente
+    } else {
+      link.classList.remove('activo'); // Quita si había otro
+    }
+  });
+</script>
+
 </body>
 </html>
