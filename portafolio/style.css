@@ -6,7 +6,6 @@
 }
 
 body {
-  font-family: "Apfel Grotesk", sans-serif;
   background-color: #FFFFFF;
   color: #404040;
   height: 100vh;         /* altura total del viewport */
@@ -15,7 +14,7 @@ body {
 }
 
 .titulo-principal {
-  font-family: "Apfel Grotesk", sans-serif;
+  font-family: "Montserrat-Bold", sans-serif;
   font-size: 50px;
   color:#ff6cba;
   margin-bottom: 50px;
@@ -23,14 +22,33 @@ body {
 }
 
 .textoinfo {
-  font-family: "Apfel Grotesk", sans-serif;
+  font-family: "Montserrat-Regular", sans-serif;
   font-size: 1rem; /* en lugar de 18px */
   margin-top: 2rem;
   margin-right: 3rem;
 }
 
+.años {
+  font-family: "Montserrat-Bold", sans-serif;
+  margin-top: 2rem;
+}
+
+.sidebarLinks {
+  font-family: "Montserrat-Light", sans-serif;
+  text-decoration: none;
+  color: #404040;
+  transition: color 0.2s;
+  line-height: 0.5rem;
+}
+
 .bold {
   font-weight: bold;
+}
+
+.gif {
+  margin-top: 3rem;
+  width: 200px;
+  border-radius: 10px;
 }
 
 
@@ -41,12 +59,12 @@ body {
   top: 15px;
   left: 15px;
   z-index: 1001;
-  background-color: #404040;
+  background-color: #ff6cba;
   color: #FFFFFF;
   border: none;
   padding: 10px 15px;
   font-size: 1rem;
-  font-family: "Apfel Grotesk", sans-serif;
+  font-family: "Montserrat-Light", sans-serif;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -60,7 +78,7 @@ body {
 }
 
 .sidebar {
-  font-family: "Apfel Grotesk", sans-serif;
+  font-family: "Montserrat-Light", sans-serif;
   font-size: 1rem;
   position: fixed;
   left: 0;
@@ -74,7 +92,7 @@ body {
   justify-content: flex-start;
   transition: transform 0.3s ease;
   z-index: 1000;
-  overflow-y: auto; /* permite scroll si sidebar es muy largo */
+  overflow-y: hidden;/* permite scroll si sidebar es muy largo */
 }
 
 .sidebar h2 {
@@ -98,7 +116,7 @@ body {
 
 /* --- CONTENIDO PRINCIPAL --- */
 .contenido {
-  font-family: "Apfel Grotesk", sans-serif;
+  font-family: "Montserrat-Regular", sans-serif;
   margin-left: 20%;      /* espacio para el sidebar */
   padding: 40px 30px;
   height: 100vh;         /* altura completa del viewport */
